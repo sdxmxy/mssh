@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.sdxmxy.domain.User" table="user">
+        <id name="id" column="id">
+            <generator class="native"/>
+            <!-- 整型，所以使用 native -->
+        </id>
+        <!-- 部门名称-->
+        <property name="name" column="name" length="20"/>
+        <!-- 部门名称-->
+        <property name="type" column="type" length="2"/>
+
+    </class>
+</hibernate-mapping>
